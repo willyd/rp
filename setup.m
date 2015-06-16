@@ -8,7 +8,7 @@ mkdir(mexDir)
 cd(mexDir);
 disp('Compiling RP mex file...');
 % Release:
-mex ../src/RP_mex.cpp ../src/stopwatch/Stopwatch.cpp
+mex ../src/RP_mex.cpp ../src/stopwatch/Stopwatch.cpp -DWIN32
 % Debug:
 % mex -g ../src/RP_mex.cpp ../src/stopwatch/Stopwatch.cpp
 cd('../');
